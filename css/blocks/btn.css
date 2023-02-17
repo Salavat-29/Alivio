@@ -1,0 +1,55 @@
+.btn, a.btn {
+    min-height: 51px;
+    display: inline-block;
+    background-color: #01996D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: opacity 02s ease;
+}
+
+.btn:hover, a.btn:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+.btn-big, a.btn-big {
+    min-height: 65px;
+    background-color: #01996D;
+    display: inline-block;
+    background-color: #01996D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: opacity 02s ease;
+}
+
+.btn-big:hover, a.btn-big:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+@media (max-width:991px) {
+    .btn, a.btn {
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 41px;
+    }  
+    a.btn-big {
+        min-height: 55px;
+    }
+}
