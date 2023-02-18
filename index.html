@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="./css/blocks/avatar.css">
     <link rel="stylesheet" href="./css/blocks/footer.css">
     <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="./css/fonts/georgia/stylesheet.css">
     <link rel="stylesheet" href="./css/fonts/lato/stylesheet.css">
@@ -46,6 +48,22 @@
             </div>
         </div>
     </header>
+
+    <div class="mobile-nav">
+        <img class="mobile-nav-logo" src="./img/logo.svg" alt="Logo">
+        <nav class="mobile-nav-list">
+            <ul>
+                <li><a href="#">Why Alivio</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-login">
+            <a  class="" href="#">Sign in</a>
+            <a href="#" class="btn btn-big">Start Trial</a>
+        </div>
+    </div>
 
     <main>
         <section class="home">
@@ -134,12 +152,15 @@
                     </div>
 
                     <div class="story-video">
-                        <div class="story-video-overlay">
-                            <button class="story-video-btn">
-                            <img src="./img/story/play-white.svg" alt="Play">
+                        <div id="video-story-overlay" class="story-video-overlay">
+                            <button id="video-story-btn" class="story-video-btn">
+                            <img id="video-story-btn-icon" width="82" height="82" src="./img/story/play-white.svg" alt="Play">
                             </button>
                         </div>
-                        <img src="./img/story/video-cover.jpg" alt="Video" class="story-video-object">
+                        <!-- <img src="./img/story/video-cover.jpg" alt="Video" class="story-video-object"> -->
+                        <video class="story-video-object" id="video-story">
+                            <source src="./video/customer-story.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -198,6 +219,7 @@
             </div>
         </div>  
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js">
+    </script>
 </body>
 </html>

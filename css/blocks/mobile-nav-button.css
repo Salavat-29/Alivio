@@ -1,6 +1,5 @@
 .mobile-nav-button {
     /* Reset for button */
-
     cursor: pointer;
     padding: 0;
     border: none;
@@ -11,9 +10,16 @@
     z-index: 999;
     width: 40px;
     height: 30px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .mobile-nav-button {
+        display: flex;
+    }
 }
 
 .mobile-nav-button__icon {
@@ -21,7 +27,7 @@
     position: relative;
     width: 40px;
     height: 5px;
-    background: #000;
+    background-color: #000;
 }
 
 .mobile-nav-button__icon::after,
@@ -30,7 +36,7 @@
     content: '';
     width: 40px;
     height: 5px;
-    border-color: #000;
+    background-color: #000;
 /* Трансформация при закрывании */
     transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
 }
